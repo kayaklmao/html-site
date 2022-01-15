@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Kaj Redlak</title>
+<link rel="icon" href="icon.gif">
+<link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+<style>
+body {
+  background-image: url("background.jpg");
+  background-repeat:no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+}
+a:link, a:visited {
+  color: #ffff;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+a:link:active, a:visited:active {
+  color: #777474;
+}
+h1{
+  text-align:center;  
+  font-family: Montserrat, sans-serif;
+    font-size: 30px;
+    color:#ffffff;
+}
+h2{
+  text-align:center;  
+  font-family: Montserrat, sans-serif;
+    font-size:25px;
+    font-style:normal;
+    font-weight:normal;
+    color:#ffffff;
+}
+p{
+  text-align:center;  
+  font-family: Montserrat, sans-serif;
+    font-size: 20px;
+    color:#ffffff;
+}
+h3{
+  text-align:center;  
+  font-family: Montserrat, sans-serif;
+    font-size:25px;
+    font-style:normal;
+    font-weight:normal;
+    color:#ffffff;
+}
+h4{
+  text-align:center;
+  font-family: Montserrat, sans-serif;
+    font-size:25px;
+    font-style:normal;
+    font-weight:normal;
+    color:#ffffff;
+}
+.p {
+background: linear-gradient(90deg, rgba(63,94,251,1) 30%, rgba(252,70,107,1) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.foto {display :none; width: 13cm; margin: 0 auto;}
+.alfa {display: none; width: 10cm; margin: 0 auto;}
+.ink {display: none; width: 10cm; margin: 0 auto;}
+.jezyk {display: block; width: 10cm; margin: 10px auto;}
+.chlopak {display: block; width: 13cm; margin: 10px auto;}
+.floppa {display: block; width: 10cm; margin: 10px auto;}
+
+.podpis {font-family: Montserrat, sans-serif; font-size: 18px; text-align: right; top: 0; position: fixed; width:99%;}
+
+.przycisk1 {
+  margin:0 auto; 
+  display:block;
+  background-color: #383838;
+  border: 1px solid transparent;
+  border-radius: .75rem;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  flex: 0 0 auto;
+  font-family: Montserrat, sans-serif;
+  font-size: 1.125rem;
+  font-weight: 600;
+  line-height: 1.5rem;
+  padding: .75rem 1.2rem;
+  text-align: center;
+  text-decoration: none #6B7280 solid;
+  text-decoration-thickness: auto;
+  transition-duration: .2s;
+  transition-property: background-color,border-color,color,fill,stroke;
+  transition-timing-function: cubic-bezier(.4, 0, 0.2, 1);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: auto;
+}
+
+.przycisk1:hover {
+  background-color: #3e4551;
+}
+
+.przycisk1:active {
+  background-color: #ffffff;
+  transform: translateY(4px);
+}
+
+.przycisk2 {
+  margin:0 auto; 
+  display:block;
+  background-color: #383838;
+  border: 1px solid transparent;
+  border-radius: .75rem;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  flex: 0 0 auto;
+  font-family: Montserrat, sans-serif;
+  font-size: 1.125rem;
+  font-weight: 600;
+  line-height: 1.5rem;
+  padding: .75rem 1.2rem;
+  text-align: center;
+  text-decoration: none #6B7280 solid;
+  text-decoration-thickness: auto;
+  transition-duration: .2s;
+  transition-property: background-color,border-color,color,fill,stroke;
+  transition-timing-function: cubic-bezier(.4, 0, 0.2, 1);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: auto;
+}
+
+.przycisk2:hover {
+  background-color: #3e4551;
+}
+
+.przycisk2:active {
+  background-color: #ffffff;
+  transform: translateY(4px);
+}
+
+.przycisk3 {
+  margin:0 auto; 
+  display:block;
+  background-color: #383838;
+  border: 1px solid transparent;
+  border-radius: .75rem;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  flex: 0 0 auto;
+  font-family: Montserrat, sans-serif;
+  font-size: 1.125rem;
+  font-weight: 600;
+  line-height: 1.5rem;
+  padding: .75rem 1.2rem;
+  text-align: center;
+  text-decoration: none #6B7280 solid;
+  text-decoration-thickness: auto;
+  transition-duration: .2s;
+  transition-property: background-color,border-color,color,fill,stroke;
+  transition-timing-function: cubic-bezier(.4, 0, 0.2, 1);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: auto;
+}
+
+.przycisk3:hover {
+  background-color: #3e4551;
+}
+
+.przycisk3:active {
+  background-color: #ffffff;
+  transform: translateY(4px);
+}
+
+.multicolortext {
+        background-image: linear-gradient(to left, violet, indigo, green, blue, yellow, orange, red);
+        -webkit-background-clip: text;
+        -moz-background-clip: text;
+        background-clip: text;
+        color: transparent;
+      }
+
+@media (min-width: 768px) {
+  .przycisk1 {
+    padding: .75rem 1.5rem;
+  }
+  .przycisk2 {
+    padding: .75rem 1.5rem;
+  }
+  .przycisk3 {
+    padding: .75rem 1.5rem;
+  }
+}
+</style>
+</head>
+
+<body>
+<p class="podpis">Kaj Redlak</p>
+<h1>Strona na Systemy operacyjne 3IP</h1>
+<p>
+  <a href="https://zse.bydgoszcz.pl" target="_blank">Strona ZSE</a>
+  <br>
+  <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">Moja ulubiona piosenka</a>
+  <br>
+  <i>Tekst kursywa</i>
+  <br>
+  <b>Tekst pogrubiony</b>
+  <br>
+  <small>Tekst pomniejszony</small>
+  <br>
+  <mark>Tekst zaznaczony</mark>
+  <br>
+  <del>Tekst przekre¶lony</del>
+  <br>
+  <ins>Tekst podkre¶lony</ins>
+  <br>
+  Ten tekst<sub> jest </sub>w indeksie dolnym
+  <br>
+  Ten <sup> tekst </sup>jest w indeksie górnym 
+
+</p>
+<p class="p"><b>Ten tekst jest ma na sobie fioletowy gradient i pogrubienie</b></p>
+<h2>Zdjêcie 1: Fotomonta¿</h2>
+<div>
+  <img class="jezyk" src="jezyk.png"/>
+  <img class="chlopak" src="chlopak.png"/>    
+</div>
+<button class="przycisk1" onclick="toggleText1()" ondblclick="display: none">Kliknij 2 razy aby zobaczyæ efekt koñcowy</button>
+<br>
+<img class="foto" id=ID1 src="fotomontaz.png">
+<h3>Zdjêcie 2: Kana³ alfa</h3>
+<div>
+  <img class="floppa" src="floppa.png"/>
+</div>
+<button class="przycisk2" onclick="toggleText2()">Kliknij 2 razy aby zobaczyæ zdjêcie z kana³em alfa</button>
+<br>
+<img class="alfa" id=ID2 src="kanalalfa.png">
+<h4>Zdjêcie 3: Zdjêcie robione w inkscape
+  <br>
+  <br>
+  Mo¿liwe, ¿e trzeba bêdzie samemu przewin±æ do zdjêcia
+</h4>
+<button href="#ink" class="przycisk3" onclick="toggleText3()">Kliknij 2 razy aby zobaczyæ zdjêcie</button>
+<br>
+<img class="ink" id=ID3 src=inkscape.svg>
+<script>
+  function toggleText1(){
+    var x = document.getElementById("ID1");
+    if (x.style.display === "none") {
+      x.style.display = "block";
+    } else {
+      x.style.display = "none";
+    }
+  }
+</script>
+<script>
+function toggleText2(){
+  var x = document.getElementById("ID2");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+</script>
+<script>
+function toggleText3(){
+  var x = document.getElementById("ID3");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+</script>
+<p class="podpis">Kaj Redlak</p>
+</body>
+</html>
+
