@@ -178,15 +178,50 @@ background: linear-gradient(90deg, rgba(63,94,251,1) 30%, rgba(252,70,107,1) 100
   background-color: #ffffff;
   transform: translateY(4px);
 }
+.przycisk4 {
+  margin:0 auto; 
+  display:block;
+  background-color: #383838;
+  border: 1px solid transparent;
+  border-radius: .75rem;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  flex: 0 0 auto;
+  font-family: Montserrat, sans-serif;
+  font-size: 1.125rem;
+  font-weight: 600;
+  line-height: 1.5rem;
+  padding: .75rem 1.2rem;
+  text-align: center;
+  text-decoration: none #6B7280 solid;
+  text-decoration-thickness: auto;
+  transition-duration: .2s;
+  transition-property: background-color,border-color,color,fill,stroke;
+  transition-timing-function: cubic-bezier(.4, 0, 0.2, 1);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: auto;
+}
 
-.multicolortext {
-        background-image: linear-gradient(to left, violet, indigo, green, blue, yellow, orange, red);
-        -webkit-background-clip: text;
-        -moz-background-clip: text;
-        background-clip: text;
-        color: transparent;
-      }
+.przycisk4:hover {
+  background-color: #3e4551;
+}
 
+.przycisk4:active {
+  background-color: #ffffff;
+  transform: translateY(4px);
+}
+.lewo {
+  text-align: left;
+}
+.center {
+  text-align: center;
+}
+.prawo {
+  text-align: right;
+}
 @media (min-width: 768px) {
   .przycisk1 {
     padding: .75rem 1.5rem;
@@ -197,13 +232,16 @@ background: linear-gradient(90deg, rgba(63,94,251,1) 30%, rgba(252,70,107,1) 100
   .przycisk3 {
     padding: .75rem 1.5rem;
   }
+  .przycisk4 {
+    padding: .75rem 1.5rem;
+  }
 }
 </style>
 </head>
 
 <body>
 <p class="podpis">Kaj Redlak</p>
-<h1>Strona na Systemy operacyjne 3IP</h1>
+<h1 id="top">Strona na Witryny 3IP</h1>
 <p>
   <a href="https://zse.bydgoszcz.pl" target="_blank">Strona ZSE</a>
   <br>
@@ -221,12 +259,14 @@ background: linear-gradient(90deg, rgba(63,94,251,1) 30%, rgba(252,70,107,1) 100
   <br>
   <ins>Tekst podkre¶lony</ins>
   <br>
-  Ten tekst<sub> jest </sub>w indeksie dolnym
+  Ten tekst jest w indeksie <sub>dolnym</sub>
   <br>
-  Ten <sup> tekst </sup>jest w indeksie górnym 
-
+  Ten tekst jest w indeksie <sup>górnym</sup>
 </p>
-<p class="p"><b>Ten tekst jest ma na sobie fioletowy gradient i pogrubienie</b></p>
+<p class="lewo">Tekst do lewej</p>
+<p class="center">Tekst w centrum</p>
+<p class="prawo">Tekst do prawej</p>
+<p class="p"><b>Ten tekst ma na sobie fioletowy gradient i pogrubienie</b></p>
 <h2>Zdjêcie 1: Fotomonta¿</h2>
 <div>
   <img class="jezyk" src="jezyk.png"/>
@@ -250,6 +290,9 @@ background: linear-gradient(90deg, rgba(63,94,251,1) 30%, rgba(252,70,107,1) 100
 <button href="#ink" class="przycisk3" onclick="toggleText3()">Kliknij 2 razy aby zobaczyæ zdjêcie</button>
 <br>
 <img class="ink" id=ID3 src=inkscape.svg>
+<button class="przycisk4" onclick="window.location.href='#top'">
+  Kliknij aby przej¶æ na górê strony
+</button>
 <script>
   function toggleText1(){
     var x = document.getElementById("ID1");
@@ -280,7 +323,6 @@ function toggleText3(){
   }
 }
 </script>
-<p class="podpis">Kaj Redlak</p>
 </body>
 </html>
 
